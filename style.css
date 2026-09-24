@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #f4f8ff;
+    color: #26364a;
+    font-family: Arial, sans-serif;
+    transition: 0.6s;
+}
+header {
+    background-color: white;
+    border-bottom: 1px solid #d8e2ee;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 8%;
+}
+.logo {
+    color: #4f6bed;
+    margin: 0;
+    transition: 0.6s;
+}
+.logo:hover {
+    color: #26364a;
+}
+.menu {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.menu a {
+    color: #26364a;
+    text-decoration: none;
+    transition: 0.6s;
+}
+.menu a:hover {
+    color: #4f6bed;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 90px 8%;
+}
+.hero-text {
+    flex: 1 1 450px;
+}
+.label {
+    color: #4f6bed;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.hero h2 {
+    color: #26364a;
+    font-size: 52px;
+    margin: 20px 0;
+}
+.hero-text p {
+    line-height: 1.6;
+}
+.hero-box {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background-color: white;
+    border: 2px solid #d8e2ee;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: 0.6s;
+}
+.hero-box:hover {
+    transform: translateY(-8px);
+    border-color: #4f6bed;
+}
+.hero-icon {
+    font-size: 100px;
+    margin: 10px;
+}
+button {
+    background-color: #4f6bed;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.6s;
+}
+button:hover {
+    background-color: #26364a;
+    transform: translateY(-3px);
+}
+.fitur-section {
+    background-color: white;
+    text-align: center;
+    padding: 80px 8%;
+}
+.fitur-section h2 {
+    font-size: 35px;
+    color: #26364a;
+}
+.fitur-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+.fitur-card {
+    flex: 1 1 250px;
+    max-width: 350px;
+    background-color: #f8faff;
+    border: 1px solid #d8e2ee;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.6s;
+}
+.fitur-card:hover {
+    transform: translateY(-10px);
+    background-color: #eef2ff;
+    border-color: #4f6bed;
+}
+.fitur-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.fitur-card h3 {
+    color: #4f6bed;
+}
+.jadwal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 8%;
+}
+.jadwal-content {
+    flex: 1 1 500px;
+}
+.jadwal-content h2 {
+    color: #26364a;
+    font-size: 35px;
+}
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: white;
+}
+th {
+    background-color: #4f6bed;
+    color: white;
+    padding: 15px;
+}
+td {
+    padding: 15px;
+    border: 1px solid #d8e2ee;
+}
+tbody tr {
+    transition: 0.6s;
+}
+tbody tr:hover {
+    background-color: #eef2ff;
+}
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+    color: #4f6bed;
+}
+.fokus-box {
+    flex: 1 1 280px;
+    max-width: 350px;
+    background-color: #26364a;
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: 0.6s;
+}
+.fokus-box:hover {
+    transform: translateY(-8px);
+}
+.fokus-icon {
+    font-size: 60px;
+}
+.fokus-box h3 {
+    font-size: 28px;
+}
+.tentang-section {
+    background-color: white;
+    text-align: center;
+    padding: 80px 8%;
+}
+.tentang-section h2 {
+    color: #26364a;
+    font-size: 35px;
+}
+.tentang-section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+footer {
+    background-color: #26364a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 40px;
+    }
+    .hero-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .jadwal-section {
+        text-align: center;
+    }
+    .fokus-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+    .hero-icon {
+        font-size: 70px;
+    }
+    .fitur-section,
+    .jadwal-section,
+    .tentang-section {
+        padding: 60px 20px;
+    }
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
